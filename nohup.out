@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/Users/dillonbishop/undistractionator/venv/lib/python3.10/site-packages/plyer/utils.py", line 96, in _ensure_obj
+    mod = __import__(module, fromlist='.')
+  File "/Users/dillonbishop/undistractionator/venv/lib/python3.10/site-packages/plyer/platforms/macosx/notification.py", line 7, in <module>
+    from pyobjus import (
+ModuleNotFoundError: No module named 'pyobjus'
+15 minutes without coding! Closing YouTube.
+Traceback (most recent call last):
+  File "/Users/dillonbishop/undistractionator/main.py", line 73, in <module>
+    continue
+  File "/Users/dillonbishop/undistractionator/main.py", line 66, in main
+    for proc in psutil.process_iter(['name']):
+  File "/Users/dillonbishop/undistractionator/main.py", line 46, in show_notification
+    continue
+  File "/Users/dillonbishop/undistractionator/venv/lib/python3.10/site-packages/plyer/facades/notification.py", line 84, in notify
+    self._notify(
+  File "/Users/dillonbishop/undistractionator/venv/lib/python3.10/site-packages/plyer/facades/notification.py", line 93, in _notify
+    raise NotImplementedError("No usable implementation found!")
+NotImplementedError: No usable implementation found!
+Traceback (most recent call last):
+  File "/Users/dillonbishop/undistractionator/venv/lib/python3.10/site-packages/plyer/utils.py", line 96, in _ensure_obj
+    mod = __import__(module, fromlist='.')
+  File "/Users/dillonbishop/undistractionator/venv/lib/python3.10/site-packages/plyer/platforms/macosx/notification.py", line 7, in <module>
+    from pyobjus import (
+ModuleNotFoundError: No module named 'pyobjus'
+15 minutes without coding! Closing YouTube.
+Traceback (most recent call last):
+  File "/Users/dillonbishop/undistractionator/main.py", line 73, in <module>
+    continue
+  File "/Users/dillonbishop/undistractionator/main.py", line 66, in main
+    for proc in psutil.process_iter(['name']):
+  File "/Users/dillonbishop/undistractionator/main.py", line 46, in show_notification
+    continue
+  File "/Users/dillonbishop/undistractionator/venv/lib/python3.10/site-packages/plyer/facades/notification.py", line 84, in notify
+    self._notify(
+  File "/Users/dillonbishop/undistractionator/venv/lib/python3.10/site-packages/plyer/facades/notification.py", line 93, in _notify
+    raise NotImplementedError("No usable implementation found!")
+NotImplementedError: No usable implementation found!
