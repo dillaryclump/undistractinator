@@ -1,6 +1,6 @@
 {
-    "websites_to_block": ["facebook.com", "twitter.com"],
-    "apps_to_block": ["Slack", "Discord"],
-    "focus_time_minutes": 90,
-    "grace_period_minutes": 10
+    "websites_to_block": ["youtube.com", "reddit.com"],
+    "apps_to_block": ["Instagram", "Discord"],
+    "focus_time_minutes": 30,
+    "grace_period_minutes": 5
   }
