@@ -9,8 +9,9 @@ from plyer import notification
 #       CONFIGURATION
 # ==========================
 CODE_EDITORS = [
+    # change to whatever app you want to focus on Im using it for coding stuff. can be anything but make sure its the correct process name.
     "Code", "Electron", "pycharm", "sublime_text",
-    "Terminal", "atom", "notepad++", "Source Filmmaker"
+    "Terminal", "atom", "notepad++"
 ]
 
 INITIAL_GRACE_PERIOD  = 15 * 60  # 15 minutes
