@@ -69,14 +69,16 @@ By separating the config, you can simply update `undistractinator_config.json` w
 
 3. **Configure**
 
-   - Create or edit the file named `undistractinator_config.json`. For example:
-     
-         {
-           "websites_to_block": ["facebook.com", "twitter.com"],
-           "apps_to_block": ["Slack", "Discord"],
-           "focus_time_minutes": 90,
-           "grace_period_minutes": 10
-         }
+  The script uses a configuration file: `undistractinator_config.json`. Example:
+
+  ```json
+  {
+    "websites_to_block": ["facebook.com", "twitter.com", "youtube.com", "reddit.com"],
+    "apps_to_block": ["Slack", "Discord"],
+    "focus_apps": ["Code", "Pycharm", "Notepad++"],
+    "focus_time_minutes": 30,
+    "grace_period_minutes": 5
+  }
      
    - Adjust sites, apps, and time intervals to suit your needs. You can add or rename keys as necessary—just be sure your `main.py` references them correctly.
    - create a venv and add it to the undistractinator folder main folder with latest version of python (as of mine 3.10.6 but should be compatible with the latest version)
@@ -108,20 +110,6 @@ By separating the config, you can simply update `undistractinator_config.json` w
    - Editing the **hosts** file (requires Admin privileges) to block domains.
    - Using **Windows Firewall** commands (`netsh`) to block certain sites or ports.
    - Libraries like `pywin32` or `pywinauto` to detect which app is in the foreground.
-
-2. **Running on Windows**
-
-   - **Command Prompt** or **PowerShell**:
-
-         python main.py
-
-   - *(Optional)* Create a `.bat` file (e.g., `run_undistractinator.bat`):
-
-         @echo off
-         python "%~dp0\main.py"
-         pause
-
-     Double-click the `.bat` to execute.
 
 3. **Scheduling**
 
@@ -180,20 +168,5 @@ You’re free to use, modify, and distribute it as long as you keep the license 
 
 ---
 
-## (Optional) Generate a `requirements.txt`
-
-If you want a clean list of Python dependencies:
-
-1. **Install Your Packages** (example below):
-
-       pip install requests pywin32
-
-2. **Create `requirements.txt`**:
-
-       pip freeze > requirements.txt
-
-This automatically captures all installed libraries and their exact versions.
-
----
 
 **Enjoy your distraction-free coding sessions on your M-series Mac, or adapt the script for Windows to stay consistent in your productivity!**
